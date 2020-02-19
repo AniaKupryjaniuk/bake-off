@@ -56,7 +56,6 @@ section {
     grid-gap: 1rem;
 }
 
-
 article {
     display: flex;
     flex-flow: column;
