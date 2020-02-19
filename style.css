@@ -22,7 +22,25 @@ body {
     background-color: var(--bg-color);
     font-family: var(--primary-font);
 }
+.triangle-container{
+  width: 600px;
+  margin: auto;
+  text-align:center;
+  border: 1px solid white;
+}
+.triangle{
+    fill: var(--color-4);
+}
 
+header img{
+    max-width: 10%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header img.front{
+    max-width: 20%;
+}
 section {
     max-width: none;
     margin: 0;
@@ -73,7 +91,7 @@ article {
 article > button {
     margin-top: auto;
     background: var(--color-4);
-    color: var(--link-color);
+    color: white;
     padding: 0.5rem;
     border: none;
     font-size: 1.2rem;
@@ -83,6 +101,7 @@ article > button {
 
 article > button:hover {
     background-color: var(--link-hover-color);
+    color: var(--link-color);
 }
 
 
@@ -127,7 +146,7 @@ h3 {
 
 
 
-/*.modal-background {
+.modal-background {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -161,7 +180,7 @@ h3 {
 
 .modal-name {
     grid-column: 1/3;
-}*/
+}
 
 
 
