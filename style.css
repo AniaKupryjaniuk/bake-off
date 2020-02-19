@@ -18,6 +18,16 @@
     box-sizing: border-box;
 }
 
+.impr{
+    background-color: var(--link-hover-color);
+}
+.improv{
+    background-color: var(--link-color);
+}
+.fight{
+    background-color: var(--color-4);
+}
+
 body {
     background-color: var(--bg-color);
     font-family: var(--primary-font);
@@ -41,7 +51,7 @@ header img{
 header img.front{
     max-width: 20%;
 }
-section {
+main {
     max-width: none;
     margin: 0;
 }
@@ -50,7 +60,7 @@ article {
     margin: 2%;
 }
 
-section {
+main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
@@ -143,9 +153,12 @@ h3 {
     color: black;
 }
 
+p{
+    font-size: 18px;
+}
 
 
-.modal-background {
+/*.modal-background {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -179,7 +192,7 @@ h3 {
 
 .modal-name {
     grid-column: 1/3;
-}
+}*/
 
 
 
