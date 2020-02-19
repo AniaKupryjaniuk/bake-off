@@ -14,27 +14,29 @@ function handleData(data) {
     myData.forEach(showData);
 }
 
-function showData(singleRowData) {
-    console.log("singleRowData - console");
-    const template = document.querySelector("#cakerecipe").content;
+function showData(singleRecipe) {
+    const template = document.querySelector("#templ").content;
     const clone = template.cloneNode(true);
-    const category = singleRowData.gsx$category.$t
+    const category = singleRecipe.gsx$category.$t
+    clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
 
-    console.log(category)
-    if (category == "cake"){
-        clone.querySelector("h3").textContent = singleRowData.gsx$name.$t;
+    if (category === "cake"){
+        /*const Img = getImageName(singleRecipe.gsx$name.$t);
+        clone.querySelector(".image").src = Img;*/
         document.querySelector("#cakes").appendChild(clone);
     }
-    /*if (category == "dessert"){
-        clone.querySelector("h3").textContent = singleRowData.gsx$name.$t;
-        document.querySelector("#desserts").appendChild(copy);
+    if (category === "dessert"){
+        document.querySelector("#desserts").appendChild(clone);
     }
-    if (category == "cookies"){
-        clone.querySelector("h3").textContent = singleRowData.gsx$name.$t;
+    if (category === "cookies"){
         document.querySelector("#cookies").appendChild(clone);
-    }*/
+    }
 }
 
+/*function getImageName(imageName) {
+    const base = ;
+    return base + imageName + ".jpg";
+}*/
 
 
 
