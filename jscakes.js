@@ -28,29 +28,26 @@ function showData(singleRecipe) {
     }
 }
 
-// Get the modal
-const modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-const btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+//back to top button
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    var topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+// click on the button = scroll to the top
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
