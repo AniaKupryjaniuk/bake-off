@@ -18,13 +18,15 @@
     box-sizing: border-box;
 }
 
-.impr{
+.impr {
     background-color: var(--link-hover-color);
 }
-.improv{
+
+.improv {
     background-color: var(--link-color);
 }
-.fight{
+
+.fight {
     background-color: var(--color-4);
 }
 
@@ -32,25 +34,29 @@ body {
     background-color: var(--bg-color);
     font-family: var(--primary-font);
 }
-.triangle-container{
-  width: 600px;
-  margin: auto;
-  text-align:center;
-  border: 1px solid white;
+
+.triangle-container {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid white;
 }
-.triangle{
+
+.triangle {
     fill: var(--color-4);
 }
 
-header img{
+header img {
     max-width: 20%;
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
-header img.front{
+
+header img.front {
     max-width: 30%;
 }
+
 main {
     max-width: none;
     margin: 0;
@@ -153,22 +159,36 @@ h3 {
     color: black;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
 li {
     list-style-type: none;
+
 }
 
-/*
-ul{
-    display: flex;
+.icons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
 }
-*/
 
-/*
-.modal-background {
+/*.c{
+    grid-column: 1;
+}
+.j{
+    grid-column: 2;
+}
+.co{
+    grid-column: 3;
+}
+.b{
+    grid-column: 4;
+}*/
+
+
+/*.modal-background {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -237,7 +257,6 @@ ul{
     color: white;
 }
 
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -275,6 +294,5 @@ ul{
   text-decoration: none;
   cursor: pointer;
 }
-
 
 

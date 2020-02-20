@@ -26,8 +26,8 @@ function showData(singleRecipe) {
         document.querySelector("#parent").appendChild(clone);
     }
 
-}
 
+}
 
 
 
