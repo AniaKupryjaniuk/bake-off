@@ -174,19 +174,15 @@ li {
     grid-gap: 30px;
 }
 
-/*.c{
-    grid-column: 1;
+.icons img:hover{
+    animation: scaleIn 0.5s ease forwards;
 }
-.j{
-    grid-column: 2;
-}
-.co{
-    grid-column: 3;
-}
-.b{
-    grid-column: 4;
-}*/
 
+@keyframes scaleIn{
+    to{
+        transform: scale(1.1);
+    }
+}
 
 /*.modal-background {
     position: fixed;
