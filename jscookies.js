@@ -21,6 +21,7 @@ function showData(singleRecipe) {
     clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
 
     if (category === "cookies"){
+        clone.querySelector(".image").src = "images/cookies/" + singleRecipe.gsx$picture.$t;
         clone.querySelector(".type").textContent = singleRecipe.gsx$type.$t;
         document.querySelector("#parent").appendChild(clone);
     }

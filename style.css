@@ -99,7 +99,7 @@ article {
 
 article > button {
     margin-top: auto;
-    background: var(--color-4);
+    background: black;
     color: white;
     padding: 0.5rem;
     border: none;

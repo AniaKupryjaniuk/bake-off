@@ -21,8 +21,8 @@ function showData(singleRecipe) {
     clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
 
     if (category === "cake"){
-        /*const Img = getImageName(singleRecipe.gsx$name.$t);
-        clone.querySelector(".image").src = Img;*/
+        /*const Img = getImageName(singleRecipe.gsx$name.$t);*/
+        clone.querySelector(".image").src = "images/cakes/" + singleRecipe.gsx$picture.$t;
         clone.querySelector(".type").textContent = singleRecipe.gsx$type.$t;
         document.querySelector("#parent").appendChild(clone);
 
