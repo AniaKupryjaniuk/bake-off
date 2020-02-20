@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+:root {
+    --bg-color: white;
+    --link-color: #3949FA;
+    --link-hover-color: #FFDB54;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+    --main-text-color: #000;
+    --white-space: 1rem;
+    --color-4: #FF6ECA;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.impr{
+    background-color: var(--link-hover-color);
+}
+.improv{
+    background-color: var(--link-color);
+}
+.fight{
+    background-color: var(--color-4);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+}
+.triangle-container{
+  width: 600px;
+  margin: auto;
+  text-align:center;
+  border: 1px solid white;
+}
+.triangle{
+    fill: var(--color-4);
+}
+
+header img{
+    max-width: 10%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header img.front{
+    max-width: 20%;
+}
+main {
+    max-width: none;
+    margin: 0;
+}
+
+article {
+    margin: 2%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+}
+
+article > img {
+    order: -1;
+    align-self: center;
+}
+
+article {
+    padding: 2rem;
+}
+
+article > h3 {
+    margin: 1rem 1rem 0;
+}
+
+article > p {
+    margin: 0.25em 1rem 1rem;
+}
+
+main {
+    font-family: var(--primary-font);
+    font-size: 80%;
+}
+
+article {
+    background-color: white;
+}
+
+article > button {
+    margin-top: auto;
+    background: var(--color-4);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article > button:hover {
+    background-color: var(--link-hover-color);
+    color: var(--link-color);
+}
+
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 75px;
+    text-align: center;
+    padding-top: 4%;
+    color: black;
+}
+
+#subheader {
+    font-size: 35px;
+    padding-top: 0%;
+    font-weight: normal;
+    font-family: var(--secondary-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h2 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    color: white;
+    margin: 8% 0 2% 0;
+    font-size: 30px;
+    grid-column: 1/-1;
+}
+
+
+
+h3 {
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 20px;
+    color: black;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+/*.modal-background {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 1em;
+    padding: 2.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-image {
+    grid-column: 1;
+}
+
+.modal-description {
+    grid-column: 2;
+}
+
+.modal-name {
+    grid-column: 1/3;
+}*/
+
+
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 99;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--link-color);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px 0px;
+    display: none;
+    font-weight: bold;
+    opacity: 85%;
+}
+
+#topBtn:hover {
+    background-color: var(--link-hover-color);
+    color: white;
+}
+
+
