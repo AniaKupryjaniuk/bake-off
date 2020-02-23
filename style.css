@@ -35,6 +35,10 @@ body {
     font-family: var(--primary-font);
 }
 
+.homepage{
+    overflow: hidden;
+}
+
 .triangle-container {
     width: 600px;
     margin: auto;
@@ -49,8 +53,7 @@ body {
 header img {
     max-width: 20%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto 0 auto;
 }
 
 header img.front {
@@ -103,7 +106,7 @@ article {
     background-color: white;
 }
 
-article > button {
+/*article > button {
     margin-top: auto;
     background: black;
     color: white;
@@ -117,16 +120,16 @@ article > button {
 article > button:hover {
     background-color: var(--link-hover-color);
     color: var(--link-color);
-}
+}*/
 
 
-h1 {
+/*h1 {
     font-family: var(--primary-font);
     font-size: 75px;
     text-align: center;
     padding-top: 4%;
     color: black;
-}
+}*/
 
 #subheader {
     font-size: 35px;
@@ -142,11 +145,11 @@ img {
 
 
 h2 {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     text-align: center;
-    color: white;
+    color: black;
     margin: 8% 0 2% 0;
-    font-size: 30px;
+    font-size: 75px;
     grid-column: 1/-1;
 }
 
@@ -174,15 +177,14 @@ li {
     grid-gap: 30px;
 }
 
+.icons img{
+    transition: all 0.5s;
+}
 .icons img:hover{
-    animation: scaleIn 0.5s ease forwards;
+    transform: scale(1.1);
 }
 
-@keyframes scaleIn{
-    to{
-        transform: scale(1.1);
-    }
-}
+
 
 /*.modal-background {
     position: fixed;
@@ -290,5 +292,26 @@ li {
   text-decoration: none;
   cursor: pointer;
 }
+
+.dot{
+    border-radius: 50%;
+    border:1px solid blue;
+    width:20px;
+    height:20px;
+    margin:2px;
+}
+.active{
+    background: blue;
+}
+
+.container{
+    display: flex;
+}
+
+.tips{
+    color: white;
+    font-size: 30px;
+}
+
 
 

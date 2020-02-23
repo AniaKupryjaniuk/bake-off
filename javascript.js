@@ -1,8 +1,3 @@
-
-
-
-
-
 //back to top button
 
 window.onscroll = function () {
