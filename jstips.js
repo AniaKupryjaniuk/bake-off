@@ -12,6 +12,7 @@ function handleData(data) {
     console.log("myData - console");
     console.log(myData);
     myData.forEach(showData);
+
 }
 
 function showData(singleTipsCateg) {
@@ -19,21 +20,22 @@ function showData(singleTipsCateg) {
     const clone = template.cloneNode(true);
     clone.querySelector("h3").textContent = singleTipsCateg.gsx$name.$t;
     clone.querySelector(".description").textContent = singleTipsCateg.gsx$description.$t;
-    clone.querySelector(".category").textContent = singleTipsCateg.gsx$category.$t;
-    console.log(singleTipsCateg.gsx$category.$t)
+    console.log(singleTipsCateg)
 
     if (singleTipsCateg.gsx$category.$t == "For improvement seekers"){
-        clone.querySelector(".category").classList.add("impr");
+        document.querySelector(".tips").classList.add("impr");
+        document.querySelector("#improvements").appendChild(clone);
     }
-    if (singleTipsCateg.gsx$category.$t == "For improvisators"){
-        clone.querySelector(".category").classList.add("improv");
+    else if (singleTipsCateg.gsx$category.$t == "For improvisators"){
+        document.querySelector(".tips2").classList.add("improv");
+        document.querySelector("#improvisation").appendChild(clone);
     }
-    if (singleTipsCateg.gsx$category.$t == "For food waste fighters"){
-        clone.querySelector(".category").classList.add("fight");
+    else if (singleTipsCateg.gsx$category.$t == "For food waste fighters"){
+        document.querySelector(".tips3").classList.add("fight");
+        document.querySelector("#foodWaste").appendChild(clone);
         /*clone.querySelector(".fight").textContent = singleTipsCateg.gsx$category.$t;*/
     }
 
-    document.querySelector("#parent").appendChild(clone);
 
 }
 
