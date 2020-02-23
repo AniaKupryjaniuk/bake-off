@@ -38,7 +38,7 @@ body {
 }
 
 .homepage{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .triangle-container {
