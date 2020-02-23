@@ -16,6 +16,8 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .impr {
@@ -175,6 +177,8 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
+    background-color: #3949fa;
+    margin-top: 50px;
 }
 
 .icons img{
