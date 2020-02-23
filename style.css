@@ -144,7 +144,7 @@ img {
 h2 {
     font-family: var(--secondary-font);
     text-align: center;
-    color: white;
+    color: black;
     margin: 8% 0 2% 0;
     font-size: 30px;
     grid-column: 1/-1;
@@ -289,6 +289,18 @@ li {
   color: var(--color-4);
   text-decoration: none;
   cursor: pointer;
+}
+
+.dot{
+    border-radius: 50%;
+    border:1px solid blue;
+    width:20px;
+    height:20px;
+    margin:2px;
+}
+
+.container{
+    display: flex;
 }
 
 
