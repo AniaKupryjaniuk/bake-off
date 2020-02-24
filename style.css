@@ -360,15 +360,6 @@ nav a,
 nav #logo {
     width: 100%;
 }
-<<<<<<< HEAD
-
-.vegan, .glutenFree{
-    display:none;
-}
-
-.show{
-    display:block;
-=======
 .menuYellow {
     text-decoration: none;
     color: black;
@@ -392,7 +383,6 @@ nav #logo {
 .menuBlue:hover {
     color: var(--link-color);
     transform: scale(1.1);
->>>>>>> origin/master
 }
 
 
