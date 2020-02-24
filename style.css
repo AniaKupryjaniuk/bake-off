@@ -77,6 +77,16 @@ main, section {
     grid-gap: 1rem;
 }
 
+/*.recipe{
+    display: block;
+}
+.recipe .image{
+    max-width: 30%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}*/
+
 article {
     display: flex;
     flex-flow: column;
@@ -302,7 +312,7 @@ li {
 
 .dot{
     border-radius: 50%;
-    border:1px solid blue;
+    border:1px solid var(--link-color);
     width:20px;
     height:20px;
     margin:2px;
