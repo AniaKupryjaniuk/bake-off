@@ -182,7 +182,7 @@ li {
 }
 
 .icons img{
-    transition: alternate all 1s;
+    transition: all 0.5s;
 }
 .icons img:hover{
     transform: scale(1.1);
@@ -323,7 +323,7 @@ section h2{
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    transition: alternate all 1s;
+    transition: all 0.5s;
 }
 .readMore:hover {
     color: var(--color-4);
