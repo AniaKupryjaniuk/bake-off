@@ -384,6 +384,10 @@ nav #logo {
     color: var(--link-color);
     transform: scale(1.1);
 }
-
-
-
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu :nth-child(3) { order: -2; }
+}
