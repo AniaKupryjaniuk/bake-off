@@ -138,6 +138,8 @@ article > button:hover {
     padding-top: 0%;
     font-weight: normal;
     font-family: var(--secondary-font);
+    margin: auto;
+    max-width: 80%;
 }
 
 img {
