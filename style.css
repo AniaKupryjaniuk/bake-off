@@ -164,6 +164,7 @@ h3 {
     padding-bottom: 5%;
     font-size: 20px;
     color: black;
+    height: 60px;
 }
 
 p {
@@ -328,6 +329,7 @@ section h2{
     transition: all 0.3s;
     padding: 5px 0px;
     border: solid var(--color-4) 2px;
+    margin-top: 10px;
 }
 .readMore:hover {
     color: var(--link-hover-color);
@@ -406,5 +408,21 @@ nav #logo {
     display:block;
 }
 
+.vegan {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 60px;
+}
 
+.glutenFree {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 60px; 
+}
+
+.picture {
+    position: relative;
+}
 
