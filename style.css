@@ -320,20 +320,20 @@ section h2{
 }
 .readMore{
     text-decoration: none;
-    color: black;
+    color: var(--color-4);
     font-family: var(--primary-font);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     transition: all 0.3s;
+    padding: 5px 0px;
+    border: solid var(--color-4) 2px;
 }
 .readMore:hover {
-    color: var(--color-4);
+    color: var(--link-hover-color);
     transform: scale(1.1);
+    border: solid var(--link-hover-color) 2px;
 }
-
-
-
 
 header {
     padding: 5px;
@@ -356,8 +356,11 @@ nav {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+<<<<<<< HEAD
     border-bottom: 2px solid black;
     padding-bottom: 1%;
+=======
+>>>>>>> origin/master
 }
 
 nav a,
@@ -388,7 +391,13 @@ nav #logo {
     color: var(--link-color);
     transform: scale(1.1);
 }
-
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu :nth-child(3) { order: -2; }
+}
 
 .vegan, .glutenFree{
     display:none;
@@ -399,5 +408,6 @@ nav #logo {
 .show{
     display:block;
 }
+
 
 
