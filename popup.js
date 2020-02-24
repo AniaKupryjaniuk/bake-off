@@ -42,6 +42,13 @@ function showRecipe(data) {
         listItem.textContent = ingredients[i];
         clone.querySelector(".ing2").appendChild(listItem);
     }
+    const type = recipe.gsx$type.$t;
+        if (type === "vegan"){
+            clone.querySelector(".vegan").classList.add("show");
+        }
+        if (type === "gluten-free"){
+            clone.querySelector(".glutenFree").classList.add("show");
+        }
     clone.querySelector(".instr").textContent = recipe.gsx$instructions.$t;
     document.querySelector("#parent").appendChild(clone);
 }
