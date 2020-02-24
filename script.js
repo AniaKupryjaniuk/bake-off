@@ -28,13 +28,16 @@ function showData(singleRecipe) {
 
     const template = document.querySelector("#templ").content;
     const clone = template.cloneNode(true);
-
+    const type = singleRecipe.gsx$type.$t;
+        if (type === "vegan"){
+            document.querySelector(".vegan").classList.add("show");
+        }
 
     if (singleRecipe.gsx$category.$t === category) {
         clone.querySelector(".readMore").href = `/popup.html?link=${singleRecipe.id.$t}?alt=json`;
         clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
         clone.querySelector(".image").src = `images/${category}/` + singleRecipe.gsx$picture.$t;
-        clone.querySelector(".type").textContent = singleRecipe.gsx$type.$t;
+
         document.querySelector("#parent").appendChild(clone);
     }
 

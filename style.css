@@ -361,6 +361,13 @@ nav #logo {
     width: 100%;
 }
 
+.vegan, .glutenFree{
+    display:none;
+}
+
+.show{
+    display:block;
+}
 
 
 
