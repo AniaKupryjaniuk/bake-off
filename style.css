@@ -9,7 +9,7 @@
     --secondary-font: "Lato", sans-serif;
     --main-text-color: #000;
     --white-space: 1rem;
-    --color-4: #FF6ECA;
+    --color-4: deeppink;
 }
 
 *,
@@ -182,7 +182,7 @@ li {
 }
 
 .icons img{
-    transition: all 0.5s;
+    transition: alternate all 1s;
 }
 .icons img:hover{
     transform: scale(1.1);
@@ -316,6 +316,17 @@ section h2{
     color: white;
     font-size: 30px;
 }
-
-
+.readMore{
+    text-decoration: none;
+    color: black;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    transition: alternate all 1s;
+}
+.readMore:hover {
+    color: var(--color-4);
+    transform: scale(1.1);
+}
 
