@@ -77,15 +77,17 @@ main, section {
     grid-gap: 1rem;
 }
 
-/*.recipe{
+.recipe{
     display: block;
+    column-count: 2;
 }
+
 .recipe .image{
-    max-width: 30%;
+    max-width: 50%;
     display:block;
     margin-left:auto;
     margin-right:auto;
-}*/
+}
 
 article {
     display: flex;
@@ -323,6 +325,7 @@ li {
 
 .container{
     display: flex;
+    justify-content:center;
 }
 
 section h2{
