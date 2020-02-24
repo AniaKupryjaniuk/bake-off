@@ -320,7 +320,7 @@ section h2{
 }
 .readMore{
     text-decoration: none;
-    color: black;
+    color: var(--color-4);
     font-family: var(--primary-font);
     font-weight: bold;
     font-size: 25px;
@@ -328,7 +328,7 @@ section h2{
     transition: all 0.3s;
 }
 .readMore:hover {
-    color: var(--color-4);
+    color: var(--link-hover-color);
     transform: scale(1.1);
 }
 
