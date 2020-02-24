@@ -330,3 +330,40 @@ section h2{
     transform: scale(1.1);
 }
 
+
+
+
+header {
+    padding: 5px;
+    text-align: center;
+
+}
+#logo{
+    background-image: url("logowt.svg");
+    background-size: contain;
+    height: 15vmin;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav a,
+nav #logo {
+    width: 100%;
+}
+
+
+Koniec četovej konverzácie
+Napíšte správu...
+
+
+
+
