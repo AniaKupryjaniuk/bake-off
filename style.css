@@ -386,4 +386,14 @@ nav #logo {
 }
 
 
+.vegan, .glutenFree{
+    display:none;
+    max-width: 20%;
+    margin-top: 15px;
+}
+
+.show{
+    display:block;
+}
+
 

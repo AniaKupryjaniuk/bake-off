@@ -37,7 +37,14 @@ function showData(singleRecipe) {
         clone.querySelector(".readMore").href = `/popup.html?link=${singleRecipe.id.$t}?alt=json`;
         clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
         clone.querySelector(".image").src = `images/${category}/` + singleRecipe.gsx$picture.$t;
-        clone.querySelector(".type").textContent = singleRecipe.gsx$type.$t;
+        const type = singleRecipe.gsx$type.$t;
+        if (type === "vegan"){
+            clone.querySelector(".vegan").classList.add("show");
+        }
+        if (type === "gluten-free"){
+            clone.querySelector(".glutenFree").classList.add("show");
+        }
+       /* clone.querySelector(".type").textContent = singleRecipe.gsx$type.$t;*/
 
         document.querySelector("#parent").appendChild(clone);
     }
