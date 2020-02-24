@@ -38,7 +38,7 @@ body {
 }
 
 .homepage{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .triangle-container {
@@ -62,7 +62,7 @@ header img.front {
     max-width: 30%;
 }
 
-main {
+main, section {
     max-width: none;
     margin: 0;
 }
@@ -71,7 +71,7 @@ article {
     margin: 2%;
 }
 
-main {
+main, section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 1rem;
@@ -312,7 +312,7 @@ li {
     display: flex;
 }
 
-.tips{
+section h2{
     color: white;
     font-size: 30px;
 }
