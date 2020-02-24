@@ -41,17 +41,6 @@ body {
     overflow-x: hidden;
 }
 
-.triangle-container {
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    border: 1px solid white;
-}
-
-.triangle {
-    fill: var(--color-4);
-}
-
 header img {
     max-width: 20%;
     display: block;
@@ -194,10 +183,15 @@ li {
     grid-gap: 30px;
     background-color: #3949fa;
     margin-top: 50px;
+    align-content: center;
 }
 
 .icons img{
     transition: all 0.5s;
+    max-width: 90%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .icons img:hover{
     transform: scale(1.1);
@@ -438,4 +432,5 @@ nav #logo {
 .picture {
     position: relative;
 }
+
 
