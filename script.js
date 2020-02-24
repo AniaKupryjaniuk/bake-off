@@ -17,6 +17,8 @@ function handleData(data) {
     const myData = data.feed.entry;
     console.log("myData - console");
     console.log(myData);
+//    console.log(myData[0].gsx$ingredients.$t)
+    let ingredients = myData[0].gsx$ingredients.$t.split("\n");
     category = document.querySelector(".category").id;
     console.log(category)
     myData.forEach(showData);

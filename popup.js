@@ -29,14 +29,19 @@ function showRecipe(data) {
     const skillsArray = new Array(skills);
 
     //ide kym je i mensie ako skills, pri kazdom pripocitavame k i
-    for(let i=0; i<skills; i++){
+    for (let i = 0; i < skills; i++) {
         dots[i].classList.add("active");
     }
     clone.querySelector(".image").src = `images/${recipe.gsx$category.$t}/` + recipe.gsx$picture.$t;
     clone.querySelector("h2").textContent = recipe.title.$t;
     clone.querySelector(".quote").textContent = recipe.gsx$quote.$t;
-    clone.querySelector(".ingr").textContent = recipe.gsx$ingredients.$t;
+    //    clone.querySelector(".ingr").textContent = recipe.gsx$ingredients.$t
+    let ingredients = recipe.gsx$ingredients.$t.split("\n");
+    for (let i = 0; i < ingredients.length; i++) {
+        listItem = document.createElement("li");
+        listItem.textContent = ingredients[i];
+        clone.querySelector(".ing2").appendChild(listItem);
+    }
     clone.querySelector(".instr").textContent = recipe.gsx$instructions.$t;
     document.querySelector("#parent").appendChild(clone);
 }
-
