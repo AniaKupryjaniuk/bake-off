@@ -35,6 +35,7 @@
 body {
     background-color: var(--bg-color);
     font-family: var(--primary-font);
+    overflow-x: hidden;
 }
 
 .homepage{
