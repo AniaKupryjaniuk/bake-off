@@ -38,9 +38,9 @@ body {
     overflow-x: hidden;
 }
 
-.homepage {
+/*.homepage {
     overflow-x: hidden;
-}
+}*/
 
 header img {
     max-width: 20%;
@@ -117,6 +117,10 @@ article > p {
     margin: 0.25em 1rem 1rem;
 }
 
+.t{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
 main {
     font-family: var(--primary-font);
     font-size: 80%;
@@ -182,7 +186,6 @@ h3 {
     padding-bottom: 5%;
     font-size: 20px;
     color: black;
-    height: 60px;
 }
 
 p {
@@ -226,18 +229,17 @@ li {
     border: none;
     border-radius: 50%;
     outline: none;
-    background-color: black;
+    background-color: rgba(0,0,0,0.7);
     color: white;
     cursor: pointer;
     font-size: 18px;
     margin: 30px 0px;
     display: none;
     font-weight: bold;
-    opacity: 70%;
 }
 
 #topBtn:hover {
-    background-color: var(--link-hover-color);
+    background-color: rgba(255, 219, 84, 0.9);
     color: white;
 }
 
