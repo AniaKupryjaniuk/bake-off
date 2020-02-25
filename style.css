@@ -69,7 +69,7 @@ section {
     grid-gap: 1rem;
 }
 
-main{
+main {
     margin-top: 50px;
 }
 
@@ -233,7 +233,7 @@ li {
     margin: 30px 0px;
     display: none;
     font-weight: bold;
-    opacity: 85%;
+    opacity: 70%;
 }
 
 #topBtn:hover {
@@ -381,6 +381,7 @@ nav #logo {
     width: 80px;
     margin-left: auto;
     margin-right: auto;
+    left: 0;
 }
 
 .title .glutenFree {
@@ -388,6 +389,7 @@ nav #logo {
     margin-left: auto;
     margin-right: auto;
     width: 80px;
+    left: 0;
 }
 
 .picture {
@@ -400,7 +402,7 @@ nav #logo {
     font-weight: bold;
     margin: 2%;
     text-align: center;
-    font-size: 4vmin;
+    font-size: 6vmin;
     padding-top: 5%;
 }
 
@@ -474,26 +476,46 @@ nav #logo {
 
 
 
-@media only screen and (max-width:1050px){
-    main{
+@media only screen and (max-width:1050px) {
+    main {
         margin-top: 70px;
     }
-    #subheader{
+
+    #subheader {
         font-size: 30px;
     }
- /*   .quote{
-        font-size: 40px;
-    }*/
 }
+
+@media only screen and (max-width:900px) {
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1%;
+    }
+
+    .title {
+        order: -1;
+    }
+    .recipe .image {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+}
+
 
 @media only screen and (max-width:700px) {
     header img.front {
         max-width: 50%;
     }
-    #subheader{
+
+    #subheader {
         font-size: 25px;
     }
-    h2{
+
+    h2 {
         font-size: 50px;
     }
 }
@@ -510,14 +532,14 @@ nav #logo {
     }
 }
 
-@media only screen and (max-width:500px){
-    main{
+@media only screen and (max-width:500px) {
+    main {
         margin-top: 80px;
     }
 }
 
-@media only screen and (max-width:400px){
-    main{
+@media only screen and (max-width:400px) {
+    main {
         margin-top: 90px;
     }
 }
