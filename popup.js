@@ -1,6 +1,4 @@
-/*
 console.log(window.location)
-*/
 
 //ziska parametre z linku
 const url = new URL(window.location);
@@ -39,10 +37,16 @@ function showRecipe(data) {
     clone.querySelector(".quote").textContent = recipe.gsx$quote.$t;
     //    clone.querySelector(".ingr").textContent = recipe.gsx$ingredients.$t
     let ingredients = recipe.gsx$ingredients.$t.split("\n");
+    let instructions = recipe.gsx$instructions.$t.split("\n");
     for (let i = 0; i < ingredients.length; i++) {
         listItem = document.createElement("li");
         listItem.textContent = ingredients[i];
         clone.querySelector(".ing2").appendChild(listItem);
+    }
+    for (let i = 0; i < instructions.length; i++) {
+        listItem2 = document.createElement("li");
+        listItem2.textContent = instructions[i];
+        clone.querySelector(".instr").appendChild(listItem2);
     }
     const type = recipe.gsx$type.$t;
         if (type === "vegan"){
@@ -51,6 +55,6 @@ function showRecipe(data) {
         if (type === "gluten-free"){
             clone.querySelector(".glutenFree").classList.add("show");
         }
-    clone.querySelector(".instr").textContent = recipe.gsx$instructions.$t;
+    /*clone.querySelector(".instr").textContent = recipe.gsx$instructions.$t;*/
     document.querySelector("#parent").appendChild(clone);
 }

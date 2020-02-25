@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,26 +24,35 @@
     </header>
     <main id="parent" class="recipe"></main>
     <template id="templ">
-        <h2>Name</h2>
-        <div class="container">
-            <p>DIFFICULTY</p>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        <div class="picture">
-            <img class="image" src="">
+        <img class="image" src="">
+
+        <div class="title">
+            <h2>Name</h2>
+
+            <div class="container">
+                <p>DIFFICULTY</p>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <p class="quote">Quote</p>
             <img class="vegan" src="vegan-icon.svg">
             <img class="glutenFree" src="gluten-free.svg">
         </div>
-        <p class="quote">Quote</p>
-        <h3>Ingredients</h3>
-        <!--<p class="ingr">Ingredients</p>-->
-        <ul class="ing2"></ul>
-        <h3>Instructions</h3>
-        <p class="instr">Instructions</p>
 
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul class="ing2"></ul>
+        </div>
+
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <ul class="instr"></ul>
+        </div>
     </template>
+    <footer><div class="box"></div></footer>
     <script src="popup.js"></script>
 
-</body></html>
+</body>
+
+</html>
