@@ -1,4 +1,6 @@
+/*
 console.log(window.location)
+*/
 
 //ziska parametre z linku
 const url = new URL(window.location);
