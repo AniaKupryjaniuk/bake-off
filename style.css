@@ -485,9 +485,11 @@ nav #logo {
 }
 
 @media only screen and (max-width:400px) {
+/*
     body {
         max-width: 100%;
     }
+*/
     main {
         margin-top: 90px;
     }
