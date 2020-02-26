@@ -126,6 +126,7 @@ article {
 #subheader {
     font-size: 35px;
     padding-top: 0%;
+    padding-bottom: 0;
     font-weight: normal;
     font-family: var(--secondary-font);
     margin: auto;
@@ -422,9 +423,9 @@ nav #logo {
 
 /*aiming for RWD*/
 @media only screen and (max-width:1050px) {
-    main {
+    /*main {
         margin-top: 70px;
-    }
+    }*/
 
     #subheader {
         font-size: 30px;
@@ -478,19 +479,17 @@ nav #logo {
     }
 }
 
-@media only screen and (max-width:500px) {
+/*@media only screen and (max-width:500px) {
     main {
         margin-top: 80px;
     }
-}
+}*/
 
-@media only screen and (max-width:400px) {
-/*
+/*@media only screen and (max-width:400px) {
     body {
         max-width: 100%;
     }
-*/
     main {
         margin-top: 90px;
     }
-}
+}*/
