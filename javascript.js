@@ -1,9 +1,11 @@
-//back to top button
+//get the "back to top button"
 
 window.onscroll = function () {
     scrollFunction()
 };
 
+
+// when the user scrolls down 20px from the top of the document, show the button
 function scrollFunction() {
     var topBtn = document.getElementById("topBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

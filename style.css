@@ -38,10 +38,6 @@ body {
     overflow-x: hidden;
 }
 
-/*.homepage {
-    overflow-x: hidden;
-}*/
-
 header img {
     max-width: 20%;
     display: block;
@@ -74,8 +70,6 @@ main {
 }
 
 .recipe {
-    /*display: block;
-    column-count: 2;*/
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 2%;
@@ -92,7 +86,6 @@ main {
 
 .recipe h2 {
     font-size: 55px;
-    /*margin-top: 0;*/
 }
 
 article {
@@ -117,7 +110,7 @@ article > p {
     margin: 0.25em 1rem 1rem;
 }
 
-.t{
+.t {
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
@@ -129,31 +122,6 @@ main {
 article {
     background-color: white;
 }
-
-/*article > button {
-    margin-top: auto;
-    background: black;
-    color: white;
-    padding: 0.5rem;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-article > button:hover {
-    background-color: var(--link-hover-color);
-    color: var(--link-color);
-}*/
-
-
-/*h1 {
-    font-family: var(--primary-font);
-    font-size: 75px;
-    text-align: center;
-    padding-top: 4%;
-    color: black;
-}*/
 
 #subheader {
     font-size: 35px;
@@ -218,7 +186,7 @@ li {
     transform: scale(1.1);
 }
 
-
+/*styling of the back to top button*/
 #topBtn {
     position: fixed;
     bottom: 20px;
@@ -229,7 +197,7 @@ li {
     border: none;
     border-radius: 50%;
     outline: none;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     cursor: pointer;
     font-size: 18px;
@@ -242,9 +210,6 @@ li {
     background-color: rgba(255, 219, 84, 0.9);
     color: white;
 }
-
-
-
 
 
 .dot {
@@ -273,6 +238,9 @@ section h2 {
     color: white;
     font-size: 30px;
 }
+.t{
+    border: 0.5px solid black;
+}
 
 .readMore {
     text-decoration: none;
@@ -296,7 +264,6 @@ section h2 {
 header {
     padding: 5px;
     text-align: center;
-
 }
 
 #logo {
@@ -338,21 +305,6 @@ nav #logo {
     transform: scale(1.1);
 }
 
-.menuBlue {
-    text-decoration: none;
-    color: black;
-    font-family: var(--primary-font);
-    font-weight: bold;
-    font-size: 25px;
-    transition: all 0.3s;
-}
-
-.menuBlue:hover {
-    color: var(--link-color);
-    transform: scale(1.1);
-}
-
-
 .vegan,
 .glutenFree {
     display: none;
@@ -360,6 +312,7 @@ nav #logo {
     margin-top: 15px;
 }
 
+/*in the combination with js it will make the icons appear when needed*/
 .show {
     display: block;
 }
@@ -410,14 +363,9 @@ nav #logo {
 
 .ingredients {
     border: 20px solid var(--link-hover-color);
-    /*background: rgba(255, 219, 84, 0.19);*/
-    /* padding: 10%;*/
     display: block;
     max-width: 100%;
     font-size: 20px;
-    /*text-align: center;*/
-    /*margin-right: auto;
-    margin-left: auto;*/
 }
 
 
@@ -427,17 +375,11 @@ nav #logo {
 
 .instructions {
     border: 20px solid var(--color-4);
-    /*background-color: rgba(255, 112, 203, 0.19);*/
-    /* padding: 5%;*/
-    /*padding-left: 10%;
-    padding-right: 10%;*/
     margin-left: auto;
     margin-right: auto;
     display: block;
     max-width: 100%;
     font-size: 20px;
-    /*text-align: justify;*/
-
 }
 
 .box {
@@ -472,12 +414,13 @@ nav #logo {
     margin-bottom: 0;
 }
 
+/*in the navigation menu - highlights the page we are on*/
 .here {
     color: var(--color-4);
 }
 
 
-
+/*aiming for RWD*/
 @media only screen and (max-width:1050px) {
     main {
         margin-top: 70px;
@@ -498,13 +441,14 @@ nav #logo {
     .title {
         order: -1;
     }
+
     .recipe .image {
-    max-width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-}
+        max-width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
 }
 
 

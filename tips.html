@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,47 @@
 </head>
 
 <body>
-   <header>
-            <nav class="menu">
-                <a href="cakes.html" class="menuYellow">CAKES</a>
-                <a href="desserts.html" class="menuYellow">DESSERTS</a>
-                <a href="index.html">
-                    <div id="logo"></div>
-                </a>
-                <a href="cookies.html" class="menuYellow">COOKIES</a>
-                <a href="tips.html" class="menuYellow here">TIPS</a>
-            </nav>
+    <header>
+        <nav class="menu">
+            <a href="cakes.html" class="menuYellow">CAKES</a>
+            <a href="desserts.html" class="menuYellow">DESSERTS</a>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <a href="cookies.html" class="menuYellow">COOKIES</a>
+            <a href="tips.html" class="menuYellow here">TIPS</a>
+        </nav>
+    </header>
 
-        </header>
     <h2>TIPS</h2>
-    <h3 id="subheader">Too proud to ask for advice? No worries. We know what you’re thinking.</h3>
-    <button onclick="topFunction()" id="topBtn">TOP</button>
-    <main id="parent"></main>
 
-    <section id="foodWaste"><h2 class="tips3">For food waste fighters</h2></section>
-    <section id="improvisation"><h2 class="tips2">For improvisators</h2></section>
-    <section id="improvements"><h2 class="tips">For improvement seekers</h2></section>
+    <h3 id="subheader">Too proud to ask for advice? No worries. We know what you’re thinking.</h3>
+
+    <button onclick="topFunction()" id="topBtn">TOP</button>
+
+    <main id="parent"></main>
+    <section id="foodWaste">
+        <h2 class="tips3">For food waste fighters</h2>
+    </section>
+    <section id="improvisation">
+        <h2 class="tips2">For improvisators</h2>
+    </section>
+    <section id="improvements">
+        <h2 class="tips">For improvement seekers</h2>
+    </section>
     <template id="templ">
         <article class="t">
-            <!--<h2 class="impr"></h2>
-            <h2 class="improv"></h2>
-            <h2 class="fight"></h2>-->
             <h3>NAME</h3>
             <p class="description"></p>
-            <!--<img class="image" src="">
-            <button>READ MORE</button>-->
         </article>
     </template>
+
+    <footer>
+        <div class="box"></div>
+    </footer>
+
     <script src="jstips.js"></script>
     <script src="javascript.js"></script>
 </body>
+
 </html>
