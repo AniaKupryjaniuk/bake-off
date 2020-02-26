@@ -125,7 +125,7 @@ article {
 
 #subheader {
     font-size: 35px;
-    padding-top: 0%;
+    padding-top: 0;
     padding-bottom: 0;
     font-weight: normal;
     font-family: var(--secondary-font);
