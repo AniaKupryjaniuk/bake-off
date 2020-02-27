@@ -39,7 +39,7 @@ function showData(singleRecipe) {
     if (singleRecipe.gsx$category.$t === category) {
 
         //adds link to readMore "button" which targets particular recipe
-        clone.querySelector(".readMore").href = `/popup.html?link=${singleRecipe.id.$t}?alt=json`;
+        clone.querySelector(".readMore").href = `/bake-off/popup.html?link=${singleRecipe.id.$t}?alt=json`;
 
         // finds an h3 inside the "virtual" copy of the template and inserts a name of the recipe into it
         clone.querySelector("h3").textContent = singleRecipe.gsx$name.$t;
