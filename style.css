@@ -239,7 +239,8 @@ section h2 {
     color: white;
     font-size: 30px;
 }
-.t{
+
+.t {
     border: 0.5px solid black;
 }
 
@@ -422,6 +423,22 @@ nav #logo {
 
 
 /*aiming for RWD*/
+@media only screen and (max-width:1300px) {
+    .icons {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    .icons img {
+        max-width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 @media only screen and (max-width:1050px) {
     /*main {
         margin-top: 70px;
@@ -430,6 +447,22 @@ nav #logo {
     #subheader {
         font-size: 30px;
     }
+}
+
+@media only screen and (max-width:975px) {
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .icons img {
+        max-width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media only screen and (max-width:900px) {
