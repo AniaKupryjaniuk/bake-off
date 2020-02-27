@@ -483,6 +483,7 @@ nav #logo {
         margin-right: auto;
         margin-top: 5%;
     }
+
 }
 
 
@@ -512,11 +513,13 @@ nav #logo {
     }
 }
 
-/*@media only screen and (max-width:500px) {
-    main {
-        margin-top: 80px;
+@media only screen and (max-width:440px) {
+     main,
+    section {
+
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-}*/
+}
 
 /*@media only screen and (max-width:400px) {
     body {
